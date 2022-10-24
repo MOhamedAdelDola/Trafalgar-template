@@ -1,0 +1,742 @@
+:root {
+    --grey: #1F1534;
+    --white: #FFFFFF;
+    --blue: #458FF6;
+    --purple: #7D7987;
+    --black: #233348;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    font-family: 'Mulish';
+    font-style: normal;
+}
+
+.text-heading,
+.text-body,
+.text-nav,
+.text-cards {
+    font-family: 'Mulish';
+    font-style: normal;
+}
+
+.text-heading {
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.text-body {
+    font-size: 21px;
+    line-height: 32px;
+}
+
+.text-nav {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.text-cards {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.primary-button {
+    padding: 0px 40px;
+    border-radius: 55px;
+    color: var(--white);
+    background-color: var(--blue);
+    border: none;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.secondary-button {
+    padding: 0px 66px;
+    color: var(--blue);
+    background-color: var(--white);
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 50px;
+    border: 2px solid var(--blue);
+    border-radius: 55px;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-row2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-row3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.bolts1 {
+    position: absolute;
+    top: 25%;
+    left: 0%;
+}
+
+
+
+/* nav */
+
+header {
+    margin-bottom: 84px;
+    margin-top: 50px;
+}
+
+.list  {
+    list-style: none;
+}
+
+.list li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.list a {
+    text-decoration: none;
+    color: var(--grey);
+    opacity: 0.5;
+}
+
+.list .active {
+    opacity: 1;
+    padding-left: 0px;
+    font-weight: bold;
+}
+
+nav {
+    width: 100%;
+}
+
+
+/* header-body */
+
+.body-text h1 {
+    padding-bottom: 25px;
+}
+
+.body-text p {
+    padding-bottom: 25px;
+    color: var(--purple);
+}
+
+.header-body {
+    margin-bottom: 192px;
+}
+
+
+/* Cards */
+
+.service-wrapper {
+    background-image: url(./assets/Vector1.png);
+    background-repeat: no-repeat;
+    background-position-x: -25.5%;
+    background-position-y: 41.5%;
+    background-size: 59%;
+    position: relative;
+    z-index: 2;
+}
+
+.service-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.bolts2 {
+    position: absolute;
+    z-index: 1;
+    right: 7%;
+    top: 48%;
+}
+
+.service-head h2 {
+    position: relative;
+    margin-bottom: 70px;
+    font-size: 37px;
+}
+
+.service-head p {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--purple);
+}
+
+.service-head h2::before {
+    content: "";
+    position: absolute;
+    bottom: -60%;
+    left: 38%;
+    height: 2px;
+    width: 60px;
+    background-color: var(--black);
+    border-radius: 5px;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+    margin-bottom: 72px;
+    z-index: 2;
+}
+
+.card-wrapper .card {
+    width: 30%;
+    padding: 40px 53px;
+    margin-bottom: 10px;
+    background: var(--white);
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    color: var(--purple);
+    z-index: 2;
+}
+
+.card img,
+.card .care {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    z-index: 2;
+}
+
+
+.card .care {
+    margin: 32px 0px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 24px;
+    line-height: 56px;
+    color: var(--grey);
+    z-index: 2;
+}
+
+.card p {
+    margin-bottom: 4px;
+}
+
+.services-btn {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+
+/* Healthcare section */
+
+.healthcare-text {
+    width: 35%;
+}
+
+.healthcare-text h2 {
+    position: relative;
+    margin-bottom: 50px;
+    line-height: 55px;
+}
+
+.healthcare-text h2::after {
+    content: "";
+    position: absolute;
+    bottom: -17%;
+    left: 0%;
+    height: 3px;
+    width: 70px;
+    background-color: var(--black);
+    border-radius: 5px;
+}
+
+.healthcare-text p {
+    color: var(--purple);
+    margin-bottom: 40px;
+}
+
+.healthcare-text button {
+    margin-bottom: 200px;
+}
+
+/* Download Section */
+.download-warper {
+    margin-bottom: 200px;
+}
+
+.download-text {
+    width: 40%;
+}
+
+.download-text h2 {
+    position: relative;
+    margin-bottom: 50px;
+    line-height: 70px;
+}
+
+.download-text h2::after {
+    content: "";
+    position: absolute;
+    bottom: -17%;
+    left: 0%;
+    height: 3px;
+    width: 70px;
+    background-color: var(--black);
+    border-radius: 5px;
+}
+
+.download-text p {
+    color: var(--purple);
+    margin-bottom: 40px;
+}
+
+.download-text button {
+    margin-bottom: 200px;
+    position: relative;
+}
+
+
+.download-text button img {
+    transform: rotate(90deg);
+    height: 12px;
+    margin-left: 14px;
+}
+
+/*  testimonials  */
+
+.testimonials-warper {
+    width: 100%;
+    background-image: url(./assets/element.svg);
+    background-repeat: no-repeat;
+    background-position-x: 6.5%;
+    background-position-y: 81.5%;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.testimonials {
+    padding-top: 80px;
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    border-radius: 24px;
+    margin-bottom: 50px;
+}
+
+.dottes {
+    position: absolute;
+    left: 90%;
+    top: -85%;
+}
+
+.testimonials-heading {
+    text-align: center;
+    margin-bottom: 104px;
+    color: var(--white);
+    position: relative;
+}
+
+.testimonials-heading h2::after {
+    /* margin-bottom: 104px; */
+    position: absolute;
+    content: "";
+    right: 48%;
+    width: 60px;
+    bottom: -52%;
+    height: 3px;
+    background-color: var(--white);
+    border-radius: 6px;
+}
+
+
+.testimonials-text {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.testimonials-body {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    margin-bottom: 89px;
+}
+
+.testimonials-body .pic h3 {
+    color: var(--white);
+}
+
+
+.testimonials-body .pic img {
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.testimonials-body .img-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--white);
+}
+
+.testimonials-body .img-description p {
+    color: var(--white);
+    opacity: 0.9;
+}
+
+.testimonials-para {
+    width: 40%;
+    color: var(--white);
+    opacity: 0.9;
+}
+
+.control {
+    text-align: center;
+}
+
+
+/* article */
+
+.article-wrapper{
+    position: relative;
+    width: 100%;
+    background-image: url(./assets/Vector3.png);
+    background-repeat: no-repeat;
+    background-position-x: 114.5%;
+    background-position-y: 23.5%;
+}
+
+.article-heading {
+    margin-bottom: 107px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.article-heading h2{
+    font-size: 36px;
+    line-height: 56px;
+}
+
+.article-heading h2::after {
+    position: absolute;
+    content: "";
+    right: 48%;
+    width: 56px;
+    bottom: -52%;
+    height: 3px;
+    background-color: var(--black);
+    border-radius: 6px;
+}
+
+.article .cards {
+    width: 31%;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    z-index: 2;
+    background-color: var(--white);
+}
+
+.art-v {
+    border-radius: 40px 20px 0px 0px;
+    margin-bottom: 25px;
+    padding-left: 27px;
+    z-index: 2;
+}
+.cards h3 {
+    padding-left: 37px;
+    margin-bottom: 25px;
+    z-index: 2;
+}
+
+.cards p {
+    padding-left: 35px;
+    margin-bottom: 25px;
+    z-index: 2;
+}
+
+.article-vector {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.article-vector {
+    color: var(--blue);
+}
+
+.article-vector img {
+    margin-top: 4px;
+    padding-left: 13px;
+    height: 13px;
+}
+
+.article-sec {
+    margin-bottom: 60px;
+}
+
+.article-dottes-up{
+    position: absolute;
+    top: 16%;
+    left: 9%;
+    z-index: 1;
+}
+/* footer */
+
+
+footer {
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    padding: 80px 0;
+    position: relative;
+}
+
+.foot_warpper{
+    padding-top: 40px;
+    justify-content: space-around;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+footer span {
+    background-color: var(--white);
+    padding: 8px 15px;
+    color: var(--blue);
+    border-radius: 50%;
+}
+
+footer .foot_left .footer-second{
+    display: inline-block;
+    margin-left: 15px;
+    opacity: 1;
+    color: var(--white);
+    font-weight: bold;
+}
+
+footer h3 {
+    color: var(--white);
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    opacity: 0.9;
+}
+footer h4 {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+footer .foot_left {
+    width: 40%;
+}
+
+footer .foot_left p{
+    margin-bottom: 8px;
+    opacity: 0.7;
+    line-height: 28px;
+}
+
+.foot_right {
+    width: 55%;
+}
+
+footer p,
+li {
+    text-align: left;
+    color: var(--white);
+    padding-bottom: 5px;
+    opacity: 0.7;
+}
+
+footer li {
+    line-height: 35px;
+}
+
+.company-links,
+.help-links,
+.region-links{
+    width: 33%;
+    padding-right: 10px;
+}
+
+
+.company-list,
+.region-list,
+.help-list{
+    list-style: none;
+}
+
+.footer-dottes-up{
+    position: absolute;
+    top: -16%;
+    right: 3%;
+    z-index: -1;
+}
+
+.footer-dottes-down{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+
+@media (max-width: 576px) {
+    header,.hero-wrapper,.service-wrapper,
+    .healthcare-warpper,.download-warper,
+    .testimonials-warper,.article-wrapper,footer{
+        width: 100vh;
+        font-size: 1.5rem;
+    }
+    header img,.hero-wrapper img,.service-wrapper img,
+    .healthcare-warpper img,.download-warper img{
+        width: 95%;
+    }
+    .healthcare-warpper h2 .download-warper h2{
+        text-align: left;
+    }
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .flex-row,.flex-row2,.flex-row3{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-heading {
+        font-size: 33px;
+        line-height: 49px;
+    }
+    .secondary-button {
+        padding: 0px 37px;
+        font-size: 18px;
+        line-height: 41px;
+        width: 88%;
+    }
+    /* footer */
+    .foot_left{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    /* article */
+    .article .cards{
+        width: 90%;
+    }
+    .article-heading{
+        margin-bottom: 50px;
+    }
+    .article-heading h2 {
+        font-size: 30px;
+        line-height: 56px;
+    }
+    .article-wrapper .services-btn .secondary-button{
+        width: 0%;
+    }
+    /* testimonials */
+    .testimonials-body {
+        display: flex;
+        width: 76%;
+        justify-content: space-evenly;
+        margin-bottom: 89px;
+    }
+    .testimonials-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .testimonials-para {
+        margin-bottom: 53px;
+        width: 58%;
+    }
+    /* download */
+    .download-text h2 {
+        line-height: 48px;
+    }
+    .download-text button img {
+        width: 0%;
+    }
+    /* healthcare */
+    .healthcare-text h2 {
+        line-height: 48px;
+    }
+    /* services */
+    .card-wrapper {
+        display: flex;
+        row-gap: 16px;
+        margin-bottom: 72px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card-wrapper .card {
+        width: 70%;
+        text-align: center;
+    }
+    .card img{
+        width: 66%;
+    }
+    .card-wrapper .services-btn .secondary-button{
+        width: 0%;
+    }
+    .service-head{
+        width: 85vh;
+    }
+    /* hero section */ 
+    .hero-wrapper{
+        text-align: center;
+    }
+    /* header */
+    .list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 992px /* height = 1251 zoom level 50% - 63% */){
+    header,.hero-wrapper,.service-wrapper,
+    .healthcare-warpper,.download-warper,
+    .testimonials-warper,.article-wrapper,footer{
+        width: 100vh;
+        font-size: 1.5rem;
+    }
+    .article .cards {
+        width: 40%;
+    }
+}
